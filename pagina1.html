@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wist je dat?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pagina1-page">
+   <section class="video-section">
+    <button
+      id="videoCubeTrigger"
+      class="video-cube"
+      type="button"
+      aria-label="Open video in volledig scherm"
+      title="Bekijk de video"
+    >
+       <img src="https://img.youtube.com/vi/Y0fItGyUNPs/maxresdefault.jpg" alt="Thumbnail van de video" class="video-cube__thumbnail">
+      <span class="video-cube__play">▶</span>
+    </button>
+    <h1 class="video-section__title">Werken bij PCPO</h1>
+  </section>
+  <div id="videoModal" class="video-modal" aria-hidden="true">
+    <button id="videoModalClose" class="video-modal__close" type="button" aria-label="Sluit video">✕</button>
+    <iframe
+      id="videoModalFrame"
+      class="video-modal__frame"
+      src=""
+      title="PCPO video"
+      allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+      allowfullscreen
+      referrerpolicy="strict-origin-when-cross-origin"
+    ></iframe>
+  </div>
+  <img class="pagina1-car" src="images/lange.auto"alt="" aria-hidden="true">
+  <!-- Page content -->
+  <h1 style="text-align: center; color: #38B6FF; margin-top: 50px;"></h1>
+
+  <!-- Arrow button -->
+  <button id="menuToggle">➤</button>
+
+  <!-- Side menu -->
+  <nav id="sideMenu">
+    <a href="pagina1.html">Schoolinformatie</a>
+    <a href="pagina2.html">Welke school past bij jouw kind?</a>
+    <a href="pagina3.html">Onze scholen</a>
+    <a href="pagina4.html">Contact</a>
+    <a href="index.html" style="padding: 40px; display:block;">Home</a>
+  </nav>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+
+</body>
+</html>
+
